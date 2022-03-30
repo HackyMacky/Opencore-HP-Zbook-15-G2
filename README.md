@@ -1,5 +1,5 @@
 # Opencore HP Zbook 15 G2
-Opencore EFI repository for HP Zbook 15 G2
+This is an Opencore EFI repository of my HP Zbook 15 G2. **DISCLAIMER:** I will not be held responsible for any damage, permanent loss of data or any sorts of consequences that may arise by using my configuration files on your devices. Please use at your own risk.
 
 ## Current Release
 - Opencore 0.7.9
@@ -8,11 +8,11 @@ Opencore EFI repository for HP Zbook 15 G2
 
 ## Notebook Specifications
 
-| Specification  | Model |
-| ------------- | ------------- |
-| Chipset  | Mobile Intel QM87 |
+| Specification  | Model |  Remark  |
+| ------------- | ------------- | ------------- |
+| Chipset  | Mobile Intel QM87 | M70 v01.26 (3/3/2020)  |
 | CPU  | Intel i7-4810MQ  |
-| iGPU  | Intel HD4600  |
+| iGPU  | Intel HD4600  | Intel (R) vBios 5.5.1028  |
 | dGPU  | Nvidia Quadro K1100M (Disabled)  |
 | Storage  | Samsung Evo 870 SATA 2.5 256GB  |
 | RAM  | 16GB (4x4GB) Micron PC3L |
@@ -35,14 +35,13 @@ Opencore EFI repository for HP Zbook 15 G2
 - Sleep/wake
 
 ## What's not working
-- Displayport, Thunderbolt port, 
+- Displayport, Thunderbolt port 
 - SD Card reader
 - Nvidia K1100M
 
 ## Not tested
 - VGA port
 - AppleID and iServices
-- ExpressCard & Smartcard
 
 ## Some quirks/issues
 - While loading the installer (DEBUG version), it may stop at EXITBS:START giving an impression of a kernel panic. Give it at least 10 minutes at most and it should continue.
@@ -58,3 +57,20 @@ Opencore EFI repository for HP Zbook 15 G2
   - Enable **Fn Key switch**
   - Enable **USB 3.0 (XHCI)**
   - Video memory size **64 MB**
+  - SATA Device Mode: **AHCI**
+  - Enable **Virtualization Technology (VTx)**
+  - Disable **Virtualization Technology for Directed I/O (VTd)**
+  - Disable **Trusted Execution Technology**
+  - Enable **Intel(R) HT Technology**
+  - Enable **Hybrid Graphics**
+- Built-in Device Options
+  - Enable **Wireless Button state**
+  - Enable **Embedded Bluetooth Device**
+  - Enable **Embedded LAN Controller**
+  - Disable **Wake on LAN**
+- Port Options
+  - Disable **Serial & Parallel port**
+
+## Credits
+- All credits & rights goes to the maintainers, contributors and developers of the Opencore project and respective kernel extensions.
+- Apple Inc.
