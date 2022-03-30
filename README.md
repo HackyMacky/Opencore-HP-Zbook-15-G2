@@ -45,7 +45,7 @@ This is an Opencore EFI repository of my HP Zbook 15 G2. **DISCLAIMER:** I will 
 
 ## Some quirks/issues
 - While loading the installer (DEBUG version), it may stop at EXITBS:START giving an impression of a kernel panic. Give it at least 10 minutes at most and it should continue.
-- The DGPU is only disabled but not completely powered off. While this reduces power consumption, do take note that it is still seeping power slowly in the backend. The SSDT to power off the DGPU is included in the config.plist but not enabled. Enabling this SSDT powers off the DGPU but somehow loses fan control hence resulting in the laptop fan running at max rpm. (hoping someone can help fix this)
+- The DGPU is only disabled but not completely powered off. While this reduces power consumption, do take note that it is still sipping power slowly in the backend. The SSDT to power off the DGPU is included in the config.plist but not enabled. Enabling this SSDT will power off the DGPU but somehow loses fan control hence resulting in the laptop fan running at max rpm. (hoping someone can help fix this)
 - The touchpad might experience lags for 30 seconds upon boot but works well after.
 - Touchpad might be unresponsive after waking from sleep
 
